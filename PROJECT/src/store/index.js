@@ -5,10 +5,10 @@ import Menu from './modules/Menu';
 import Pagination from './modules/Pagination';
 
 export default createStore({
-	modules: {
-		Catalog,
-		Cart,
-		Menu,
-		Pagination,
-	}
+  modules: {
+    Catalog,
+    Cart,
+    Menu,
+    Pagination,
+  }
 })

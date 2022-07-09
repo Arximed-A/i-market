@@ -12,7 +12,7 @@ import RequestManager from './plugins/api';
 window.$api = new RequestManager();
 
 createApp(App)
-	.use(router)
-	.use(store)
-	.use(vuetify)
-	.mount('#app')
+  .use(router)
+  .use(store)
+  .use(vuetify)
+  .mount('#app')

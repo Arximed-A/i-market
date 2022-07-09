@@ -23,7 +23,7 @@ export default {
       active: 1,
     };
   }, 
-	
+  
   computed: {
     ...mapState({
       total: state => state.Pagination.total,
