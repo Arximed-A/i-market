@@ -1,20 +1,20 @@
 <template>
-	<div>
-	<!-- <Slider/> -->
-	<Avds/>
-	<div class="products">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<!-- Каталог -->
-					<Catalog :query="{ filter: 'category' }" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<AmazingDevices/>
-	<IconBox/>
-	</div>
+  <div>
+  <!-- <Slider/> -->
+  <Avds/>
+  <div class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- Каталог -->
+          <Catalog :query="{ filter: 'category' }" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <AmazingDevices/>
+  <IconBox/>
+  </div>
 </template>
 
 <script>

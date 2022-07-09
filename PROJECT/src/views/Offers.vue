@@ -1,10 +1,10 @@
 <template>
-	<div>Страница оферов</div>
+  <div>Страница оферов</div>
 </template>
 
 <script>
 export default {
-	name: 'Categories',
+  name: 'Categories',
 }
 </script>
 

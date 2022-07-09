@@ -10,51 +10,51 @@ import CheckOut from '@views/CheckOut/CheckOut';
 
 
 const routes = [
-	{
-		path: '/',
-		name: 'home',
-		component: Home,
-	},
-	{
-		path: '/category',
-		name: 'category',
-		component: Category,
-	},
-	{
-		path: '/accessories',
-		name: 'accessories',
-		component: Accessories,
-	},
-	{
-		path: '/offers',
-		name: 'offers',
-		component: Offers,
-	},
-	{
-		path: '/contact',
-		name: 'Contact',
-		component: Contact,
-	},
-	{
-		path: '/cart',
-		name: 'Cart',
-		component: Cart,
-	},
-	{
-		path: '/catalog/:id',
-		name: 'Product',
-		component: Product,
-	},
-	{
-		path: '/check-out',
-		name: 'Check out',
-		component: CheckOut,
-	},
+  {
+    path: '/',
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/category',
+    name: 'category',
+    component: Category,
+  },
+  {
+    path: '/accessories',
+    name: 'accessories',
+    component: Accessories,
+  },
+  {
+    path: '/offers',
+    name: 'offers',
+    component: Offers,
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact,
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart,
+  },
+  {
+    path: '/catalog/:id',
+    name: 'Product',
+    component: Product,
+  },
+  {
+    path: '/check-out',
+    name: 'Check out',
+    component: CheckOut,
+  },
 ]
 
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
-	routes
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 })
 
 export default router

@@ -5,7 +5,7 @@
         :key="item.id" 
         :item="item"
         :imgApi="imgApi"
-				@addItem="addItem"
+        @addItem="addItem"
       />
     </div>
 </template>
@@ -17,12 +17,12 @@ import item from './items/catalogItem.vue';
 export default {
   name: 'Catalog',
   components: { item },
-	props:{
-		query: {
-			type: Object,
-			default: () => null,
-			}
-	},
+  props:{
+    query: {
+      type: Object,
+      default: () => null,
+      }
+  },
   data() {
     return {
       url: '/api/catalog',
@@ -30,12 +30,12 @@ export default {
       error: null,
     };
   },
-	computed:{
-		...mapGetters({
+  computed:{
+    ...mapGetters({
       items: 'Catalog/items',
     })
-	},
-	 watch: {
+  },
+   watch: {
     query: {
       deep: true,
       async handler() {
@@ -44,37 +44,37 @@ export default {
     }
   },
   methods:{
-		...mapActions({
-			getCatalog: 'Catalog/getCatalog',
-		}),
-		addItem(id) {
-			console.log(id);
-		},
-	},
-	async created(){
-		try{
-			 await this.getCatalog(this.query);
-		}
-		catch(err){
-			console.warn(err);
-		}
-	},
+    ...mapActions({
+      getCatalog: 'Catalog/getCatalog',
+    }),
+    addItem(id) {
+      console.log(id);
+    },
+  },
+  async created(){
+    try{
+       await this.getCatalog(this.query);
+    }
+    catch(err){
+      console.warn(err);
+    }
+  },
 }
 </script>
 
 <style>
-	.catalog {
-		/* min-height: 1200px !important; */
-		max-width: 1400px !important;
-		display: flex !important;
-		flex-wrap: wrap !important;
-		justify-content: space-between !important;
-		padding: 0px 50px;
-		margin: 0px auto;
-	}
+  .catalog {
+    /* min-height: 1200px !important; */
+    max-width: 1400px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    padding: 0px 50px;
+    margin: 0px auto;
+  }
 
-	.btn-add {
-		margin: 0px auto !important;
-		width: 100% !important;
-	}
+  .btn-add {
+    margin: 0px auto !important;
+    width: 100% !important;
+  }
 </style>

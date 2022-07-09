@@ -1,12 +1,12 @@
 <template>
-	<div class="col-lg-6">
+  <div class="col-lg-6">
     <div 
-			class="details_image" 
-			v-if="activeImg"
-			>
+      class="details_image" 
+      v-if="activeImg"
+      >
       <div class="details_image_large">
         <img :src="activeImg.URL" alt="">
-				<!-- <div class="product_extra product_new">
+        <!-- <div class="product_extra product_new">
           <a href="categories.html">New</a>
         </div> -->
       </div>
@@ -26,24 +26,24 @@
 
 <script>
 export default {
-	name:'Gallery',
-	props: {
-		images:{
-			type: Array,
-			default: () => [],
-		}
-	},
-	data(){
-		return {
-			active: 0,
-		}
-	},
-	methods: {
+  name:'Gallery',
+  props: {
+    images:{
+      type: Array,
+      default: () => [],
+    }
+  },
+  data(){
+    return {
+      active: 0,
+    }
+  },
+  methods: {
     changeImg(idx) {
       this.active = idx;
     }
   },
-	computed: {
+  computed: {
     activeImg() {
       return this.images[this.active] || null;
     }

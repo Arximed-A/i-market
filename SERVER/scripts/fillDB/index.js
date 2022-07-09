@@ -10,20 +10,20 @@ const reader = require('../../plugins/reader');
 const writer = require('../../plugins/writer');
 
 async function fillDB() {
-	try {
-		const data = await Promise.all([await reader(cartURL), await reader(catalogURL), await reader(menuURL)]);
-		const [cart, catalog, menu] = data;
+  try {
+    const data = await Promise.all([await reader(cartURL), await reader(catalogURL), await reader(menuURL)]);
+    const [cart, catalog, menu] = data;
 
-		await Promise.all([
-			await writer(dbURL + '/cart.json', cart),
-			await writer(dbURL + '/catalog.json', catalog),
-			await writer(dbURL + '/menu.json', menu)
-		]);
-		console.log('DB filled');
-	}
-	catch {
-		throw new Error('fill DB Error');
-	}
+    await Promise.all([
+      await writer(dbURL + '/cart.json', cart),
+      await writer(dbURL + '/catalog.json', catalog),
+      await writer(dbURL + '/menu.json', menu)
+    ]);
+    console.log('DB filled');
+  }
+  catch {
+    throw new Error('fill DB Error');
+  }
 }
 
 fillDB();
