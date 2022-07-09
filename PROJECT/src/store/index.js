@@ -10,5 +10,5 @@ export default createStore({
     Cart,
     Menu,
     Pagination,
-  }
+  },
 })

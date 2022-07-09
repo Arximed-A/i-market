@@ -48,7 +48,6 @@
             <!-- Total -->
             <div class="cart_item_total">$790.90</div>
           </div>
-
         </div>
       </div>
       <div class="row cart_items_row">
@@ -86,7 +85,6 @@
             <!-- Total -->
             <div class="cart_item_total">$790.90</div>
           </div>
-
         </div>
       </div>
       <div class="row row_cart_buttons">
@@ -138,7 +136,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-6 offset-lg-2">
           <div class="cart_total">
             <div class="section_title">Cart total</div>

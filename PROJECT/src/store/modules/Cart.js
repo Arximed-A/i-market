@@ -17,8 +17,7 @@ export default {
   },
   mutations: {
     setCartData(state, data) {
-      state.data = data; //сомнения
-
+      state.data = data;
     }
   },
   getters: {

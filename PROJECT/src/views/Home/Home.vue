@@ -26,15 +26,15 @@ import IconBox from '../../components/IconBox.vue';
 
 
 export default {
-    name: "Home",
-    components: {
+  name: "Home",
+  components: {
     Catalog,
     Slider,
     Avds,
     AmazingDevices,
     IconBox,
     Slider
-},
+  },
 }
 </script>
 
